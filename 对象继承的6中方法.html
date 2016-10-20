@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    function SuperType() {
+//        this.property = true;
+//    }
+//    SuperType.prototype.getSuperValue = function() {
+//        return this.property;
+//    }
+//    function subType() {
+//        this.property = false;
+//    }
+//    //继承了SuperType
+//    subType.prototype = new SuperType();
+//    subType.prototype.getSubValue = function (){
+//        return this.property;
+//    }
+//    var instance = new subType();
+//    console.log(instance.getSuperValue());//true
+
+
+
+
+
+function object(o) {
+    function F() {}
+    F.prototype = o;
+    return new F();
+}
+
+
+function createAnother(original) {
+    var clone = object(original);
+    clone.sayHi = function() {
+        alert('hi');
+    }
+    return clone;
+}
+
+var person = {
+    name : 'wuyuchang',
+    friends : ['wyc', 'Nicholas', 'Rose']
+}
+var anotherPerson = createAnother(person);
+anotherPerson.sayHi();
+
+
+</script>
+</body>
+</html>

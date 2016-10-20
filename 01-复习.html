@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    var obj = {
+    //        a:10
+    //    }
+    //    if("a" in window){
+    //        console.log("是window的属性")
+    //    }
+    //    console.log("a" in window)
+//    var obj = {
+//        name: "12"
+//    }
+//    var o = obj;
+//    o.age = "as"
+//    o = {}
+//    o.name = 'zs'
+//
+////    console.log(o.name)
+////    console.log(o.age)
+//    console.log(obj.name)
+//    console.log(obj.age)
+//    console.log(o.name)
+//    var o = new Object();
+//    function foo(obj) {
+//        obj.name = "腐女";
+//        obj = new Object();
+//        obj.name = "屌丝";
+//    }
+//    foo(o);
+//    console.log(o.name);
+//    var obj ={
+//        name:"zs",
+//        age:12
+//    }
+//    console.log(delete(obj.name))
+//    console.log(obj)
+//    function Fn(a){
+////        this.name = "sad";
+////        this.age = 12
+//        console.log(arguments.length)
+//    }
+//    Fn(1,23,4)
+//    Fn.name = "sad";
+//    Fn.prototype.hello=function(){
+//        console.log(this.name)
+//    }
+//    var o = new Fn()
+//    console.log(o.name)
+//    console.log(Fn.name)
+
+//    var length = 10;
+//    function fn(){
+//        console.log(this.length);
+//    }
+//    var obj = {
+//        length: 5,
+//        method: function (fn) {
+//
+//            fn();   // 10
+//
+//            arguments[0](); // 2
+//        }
+//    };
+//
+//    obj.method(fn, 123);
+
+
+//    var foo = {
+//        bar: function() {
+//            return this.baz;
+//        },
+//        baz: 1
+//    };
+//    var a = (function() {
+//        return arguments[0]();
+//    })(foo.bar);
+//    console.log(a);
+//    var createPerson = function(name) {
+//        return {
+//            get_name: function() {
+//                return name;
+//            }
+//        };
+//    };
+//
+//    // 原来调用方式（工厂模式）
+////    var p1 = createPreson();
+//    // 使用new （寄生模式）
+//    var p2 = new createPerson();
+////    console.log(p2.get_name())
+
+    (function(){
+        var num =123;
+        return num
+//        window.num =num
+    })()
+    console.log(a)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="../ajax/jquery.js"></script>
+        <style>
+        .someClass{
+        	width: 40px;
+        	height: 40px;
+        	background-color: red
+        }
+        </style>
+    </head>
+    <body>
+    <div class="someClass"></div>
+    <script>
+
+    // var box = document.querySelector(".box")
+    // var obj = {
+    // 	title:"zhangsan",
+    // 	lick:function  () {
+    // 		console.log(this.title)
+    // 	}
+    // }
+    // // obj.lick()
+    // box.onclick =function  () {
+    // 	obj.lick.bind(this)
+    // }
+  //   function fn (a,b) {
+  //   	console.log(this)
+  //   }
+  //   function f2 () {
+  //   	console.log(this)
+  //   }
+  //   var obj = {}
+ 	// var fn3 = f2.bind(obj)
+  //  	console.log(fn3())
+ //  	var foo = {
+ //    bar : 1,
+ //    eventBind: function(){
+	//         $('.someClass').on('click',function(event) {
+	//              Act on the event 
+	//             console.log(this.bar);      //1
+	//         }.bind(this));
+	//         // console.log(this)
+ //    	}
+	// }
+	// foo.eventBind()
+	function fn(){
+		var bar = 1
+
+		setTimeout(function(){
+			console.log(this.bar)
+		},0)
+	}
+		
+	
+
+    </script>
+    </body>
+</html>
